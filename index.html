@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — NES Collection Manager</title>
+  <title>Privacy Policy — CartLodge</title>
   <style>
     :root { color-scheme: light dark; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -18,10 +18,10 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">NES Collection Manager &middot; Last updated: June 7, 2026</p>
+  <p class="updated">CartLodge &middot; Last updated: June 13, 2026</p>
 
   <p>
-    This Privacy Policy describes how the <strong>NES Collection Manager</strong>
+    This Privacy Policy describes how the <strong>CartLodge</strong>
     mobile application (the &ldquo;App&rdquo;) handles your information. The App is
     designed to keep your personal data on your own device.
   </p>
@@ -33,7 +33,10 @@
     There are no accounts and no sign-in. Your collection data is stored only on
     your device. The App uses the camera for on-device barcode scanning, and uses
     an internet connection only to download game cover images and to open optional
-    external reference links in your browser, as described below.
+    external reference links in your browser, as described below. An optional
+    &ldquo;Float Mode&rdquo; feature, which you start yourself, can capture your
+    screen to identify a game; those frames are analyzed <strong>on your device</strong>
+    and are never stored or transmitted.
   </p>
 
   <h2>Information We Collect</h2>
@@ -61,6 +64,28 @@
     not saved, stored, or transmitted</strong> anywhere. If you choose to link a scanned
     barcode to a game, only the barcode number is saved locally in your collection
     database.
+  </p>
+
+  <h2>Screen Capture (Float Mode)</h2>
+  <p>
+    The App includes an optional feature called <strong>Float Mode</strong>, which
+    identifies which game is shown on your screen (for example, in a marketplace
+    listing or video) so you can find it in your collection. Float Mode runs
+    <strong>only when you start it yourself</strong> and grant Android&rsquo;s
+    screen-capture consent. While it is running, it uses the system screen-capture
+    (MediaProjection) service to read frames of your screen, which are analyzed
+    <strong>entirely on your device</strong> &mdash; matching the on-screen image and
+    text against the App&rsquo;s local game catalog.
+  </p>
+  <p>
+    <strong>Captured screen frames are processed in memory and immediately discarded.
+    No screen content is recorded, saved, or transmitted off your device</strong>, and
+    none of it is sent to us or any third party. Only the resulting match &mdash; which
+    game in your catalog was recognized &mdash; is shown to you in the App. While Float
+    Mode is active, an ongoing notification and a floating on-screen indicator are
+    always visible so you know capture is in progress. You can pause or stop it at any
+    time; Android&rsquo;s screen-capture consent is single-use, so capture also ends when
+    you lock your screen and must be explicitly granted again to resume.
   </p>
 
   <h2>Internet Access</h2>
@@ -98,6 +123,8 @@
   <ul>
     <li><strong>Camera</strong> &mdash; used only for on-device barcode scanning, as described above.</li>
     <li><strong>Internet</strong> &mdash; used only to download cover images and open optional external links.</li>
+    <li><strong>Screen capture (MediaProjection, via a foreground service)</strong> &mdash; used only while you run the optional Float Mode feature, to read screen frames that are analyzed on-device and immediately discarded; never stored or transmitted.</li>
+    <li><strong>Display over other apps</strong> &mdash; used only to show the Float Mode floating bubble (recognition result and controls) over your screen; it reads no data.</li>
   </ul>
 
   <h2>Children&rsquo;s Privacy</h2>
@@ -120,8 +147,8 @@
   </p>
 
   <footer>
-    &copy; 2026 NES Collection Manager. This policy applies solely to the
-    NES Collection Manager application distributed via Google Play.
+    &copy; 2026 CartLodge. This policy applies solely to the
+    CartLodge application distributed via Google Play.
   </footer>
 </body>
 </html>
